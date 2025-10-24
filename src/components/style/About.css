@@ -2,4 +2,9 @@
 #about {
   background-color: #191919;
   color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

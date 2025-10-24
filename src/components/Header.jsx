@@ -14,15 +14,8 @@ function Header() {
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
-      <div className="social">
-        <a href="https://github.com/Firmank123" className="git">
-          <img src="https://img.icons8.com/material-outlined/24/ffffff/github.png" alt="GitHub" />
-          GitHub
-        </a>
-        <a href="https://t.me/firmank123" className="tg">
-          <img src="https://img.icons8.com/material-outlined/24/ffffff/telegram-app.png" alt="Telegram" />
-          Telegram
-        </a>
+      <div className="theme-toggle">
+        <button id="theme-button">🌙</button>
       </div>
     </div>
   );
