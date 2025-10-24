@@ -1,36 +1,106 @@
-/* Header */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
+.header {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: space-between;
+    display: flex;
+    font-weight: 600;
+    background-color: #111;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+a {
+    text-decoration: none;
+    color: white;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+.me {
+    margin-left: 25px;
 }
 
-nav a:hover {
-  color: #ff6b6b;
+.me a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
-/* Responsivitas untuk header */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
+.git {
+    margin-right: 15px;
+}
+
+.git img {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+
+.tg img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.menu {
+    text-decoration: none;
+    font-style: normal;
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff6b6b;
+}
+
+.social {
+    text-decoration: none;
+    font-style: normal;
+    display: flex;
+    margin-right: 25px;
     gap: 1rem;
-  }
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #ff6b6b;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        margin-top: 5px;
+    }
+
+    .me {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social {
+        margin-right: 0;
+        justify-content: center;
+    }
 }

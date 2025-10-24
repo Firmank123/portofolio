@@ -1,6 +1,6 @@
 /* Contact */
 #contact {
-  background-color: #f9f9f9;
+  color: whitesmoke;
 }
 
 #contact form {
@@ -14,9 +14,11 @@
 #contact input,
 #contact textarea {
   padding: 0.8rem;
-  border: 1px solid #ddd;
+  border: 1px solid #555;
   border-radius: 5px;
   font-size: 1rem;
+  background-color: #333;
+  color: whitesmoke;
 }
 
 #contact textarea {
@@ -25,7 +27,7 @@
 }
 
 #contact button {
-  background-color: #333;
+  background-color: #ff6b6b;
   color: #fff;
   border: none;
   padding: 0.8rem;
@@ -36,5 +38,5 @@
 }
 
 #contact button:hover {
-  background-color: #555;
+  background-color: #ff5252;
 }
