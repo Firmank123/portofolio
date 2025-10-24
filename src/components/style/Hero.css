@@ -26,19 +26,39 @@
     margin-bottom: 2rem;
 }
 
-#home button {
+.button {
     background-color: #ff6b6b;
     color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
 }
 
-#home button:hover {
+.button:hover {
     background-color: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 107, 107, 0.4);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social a {
+    transition: transform 0.3s;
+}
+
+.social a:hover {
+    transform: scale(1.1);
 }
 
 /* Responsivitas */
@@ -57,5 +77,8 @@
 
     #home p {
         font-size: 18px;
+    }
+    .social {
+        gap: 1rem;
     }
 }

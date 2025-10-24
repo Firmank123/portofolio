@@ -35,17 +35,25 @@ function Header() {
     return () => observer.disconnect();
   }, []);
 
+  const handleMenuClick = (e, targetId) => {
+    e.preventDefault();
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="me">
         <a>M. Firmansyah</a>
       </div>
       <div className="menu">
-        <a href="#home" className={activeSection === 'home' ? 'active' : ''}>Home</a>
-        <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a>
-        <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
-        <a href="#skills" className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
-        <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a>
+        <a href="#home" onClick={(e) => handleMenuClick(e, 'home')} className={activeSection === 'home' ? 'active' : ''}>Home</a>
+        <a href="#about" onClick={(e) => handleMenuClick(e, 'about')} className={activeSection === 'about' ? 'active' : ''}>About</a>
+        <a href="#projects" onClick={(e) => handleMenuClick(e, 'projects')} className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
+        <a href="#skills" onClick={(e) => handleMenuClick(e, 'skills')} className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
+        <a href="#contact" onClick={(e) => handleMenuClick(e, 'contact')} className={activeSection === 'contact' ? 'active' : ''}>Contact</a>
       </div>
       <div className="theme-toggle">
         <button id="theme-button">🌙</button>
